@@ -1,0 +1,10 @@
+/node_modules
+/coverage
+/es6
+/lib
+/umd
+/.nyc_output
+npm-debug.log
+coverage.lcov
+codecov.yml
+yarn.lock

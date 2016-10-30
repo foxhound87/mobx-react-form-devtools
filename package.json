@@ -1,0 +1,106 @@
+{
+  "name": "mobx-react-form-devtools",
+  "license": "MIT",
+  "version": "0.0.0-semantically-released",
+  "author": "Claudio Savino <claudio.savino@me.com> (https://twitter.com/foxhound87)",
+  "description": "DevTools for MobX React Form",
+  "homepage": "https://www.npmjs.com/package/mobx-react-form-devtools",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean:build": "rimraf lib && rimraf umd",
+    "clean:modules": "rimraf node_modules && npm cache clean",
+    "clean:all": "npm run clean:build && npm run clean:modules",
+    "lint": "eslint . demo --ext .jsx,.js --ignore-path .gitignore",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel -d lib/ src/",
+    "build:umd": "webpack --output-filename mobx-react-form-devtools.umd.js",
+    "build:umdmin": "webpack --output-filename mobx-react-form-devtools.umd.min.js -p",
+    "prebuild": "npm run clean:build",
+    "commit": "git add . && git-cz && git push origin",
+    "watch:build": "babel --watch -d lib/ src/",
+    "watch:test": "npm run test -- -w",
+    "test": "mocha tests --compilers js:babel-register",
+    "cover": "nyc npm test",
+    "coverage:check": "nyc check-coverage --satements 0 --branches 0 --functions 0 --lines 0",
+    "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foxhound87/mobx-react-form-devtools.git"
+  },
+  "keywords": [
+    "mobx",
+    "react",
+    "form",
+    "devtools"
+  ],
+  "files": [
+    "es6",
+    "lib",
+    "umd"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint && npm run cover"
+    }
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.16.2",
+    "mobx-react": "^3.5.8",
+    "react-dock": "0.2.3",
+    "react-draggable": "^2.2.2",
+    "react-json-tree": "^0.10.0",
+    "react-tooltip": "^3.2.1"
+  },
+  "peerDependencies": {
+    "mobx": "^2.6.0",
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-eslint": "7.0.0",
+    "babel-loader": "6.2.5",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-lodash": "3.2.9",
+    "babel-plugin-transform-class-properties": "6.16.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "babel-register": "6.16.3",
+    "chai": "3.5.0",
+    "codecov": "1.0.1",
+    "commitizen": "2.8.6",
+    "css-loader": "^0.25.0",
+    "cz-conventional-changelog": "1.2.0",
+    "eslint": "3.8.0",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.4.1",
+    "file-loader": "^0.9.0",
+    "ghooks": "1.3.2",
+    "mobx": "2.6.0",
+    "mocha": "3.1.2",
+    "npm-run-all": "3.1.0",
+    "nyc": "8.3.1",
+    "postcss-import": "8.1.2",
+    "postcss-loader": "^1.1.0",
+    "postcss-url": "5.1.2",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "rimraf": "2.5.4",
+    "semantic-release": "4.3.5",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "1.13.2"
+  }
+}
