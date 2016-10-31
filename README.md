@@ -38,6 +38,11 @@ MobxReactFormDevTools.register({
 MobxReactFormDevTools.select('registerForm');
 ```
 
+## Screenshot
+
+![DevTools](https://github.com/foxhound87/mobx-react-form-devtools/blob/master/screenshot.png?raw=true)
+
+
 ## Link DevTools to Demo
 
 ```bash
