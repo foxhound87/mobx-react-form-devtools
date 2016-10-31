@@ -27,6 +27,10 @@
   font-size: 16px;
 }
 
+.mobx-react-form-devtools .tools .icon {
+  margin-top: -2px;
+}
+
 .mobx-react-form-devtools .draggable {
   position: fixed;
   right: 0;
@@ -45,7 +49,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  margin-top: 5px;
+  margin: 5px 1px 1px 1px;
   background: #a3be8c;
   color: #2b303b;
   -webkit-border-radius: 2px;
