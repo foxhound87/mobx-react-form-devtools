@@ -1,4 +1,4 @@
-# MobX React Form
+# MobX React Form DevTools
 
 ##### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-react-form)
 
