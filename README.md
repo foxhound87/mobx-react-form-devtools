@@ -34,7 +34,7 @@ MobxReactFormDevTools.register({
 });
 
 // select form to show into the devtools
-MobxReactFormDevTools.register('registerForm');
+MobxReactFormDevTools.select('registerForm');
 ```
 
 ## Contributing
