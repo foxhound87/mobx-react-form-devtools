@@ -7,7 +7,16 @@ import ReactTooltip from 'react-tooltip';
 import JSONTree from 'react-json-tree';
 import cx from 'classnames';
 import _ from 'lodash';
+
+import IconFaTh from 'react-icons/lib/fa/th';
+import IconFaBars from 'react-icons/lib/fa/bars';
+import IconFaCircleO from 'react-icons/lib/fa/circle-o';
+import IconFaBook from 'react-icons/lib/fa/book';
+import IconFaChevronLeft from 'react-icons/lib/fa/chevron-left';
+import IconFaChevronCircleRight from 'react-icons/lib/fa/chevron-circle-right';
+
 import theme from './theme';
+
 
 /* map object */
 function mapo(object, callback) {
@@ -132,7 +141,7 @@ const SelectInitialForm = observer(({ store, actions }) =>
           value={key}
           onClick={e => handleInitialFormSelect(e, key, actions)}
         >
-          <i className="fa fa-circle-o" /> {val}
+          <IconFaCircleO className="icon" /> {val}
         </button>
       )}
     </div>
@@ -143,7 +152,7 @@ const RenderFormData = observer(({ store, actions }) =>
   <div className="tree">
     <h3 className="clearfix">
       <div className="left title">
-        <i className="fa fa-th" /> Form
+        <IconFaTh className="icon" /> Form
       </div>
       <div className="right select">
         <SelectMenu store={store} actions={actions} />
@@ -155,7 +164,7 @@ const RenderFormData = observer(({ store, actions }) =>
       theme={theme}
       isLightTheme={false}
     />
-    <h4><i className="fa fa-bars" /> Fields</h4>
+    <h4><IconFaBars className="icon" /> Fields</h4>
     <JSONTree
       hideRoot
       data={parseFieldsData(store.selected.form.fields)}
@@ -180,19 +189,19 @@ export default observer(({ store, actions }) => (
 
     <Draggable
       axis="y"
-      handle=".handle"
+      handle=".devtools-drag"
       zIndex={99999999999}
       defaultPosition={{ x: 0, y: 0 }}
     >
       <div className={cx('draggable', { hidden: tools.open })}>
-        <div className="handle" data-tip="DRAG">
-          <i className="fa fa-bars" />
+        <div className="devtools-drag" data-tip="DRAG">
+          <IconFaBars className="icon" />
         </div>
         <button onClick={handleOnOpenTools} data-tip="OPEN">
-          <i className="fa fa-chevron-left" />
+          <IconFaChevronLeft className="icon" />
         </button>
         <button onClick={handleOnOpenDoc} data-tip="DOCS">
-          <i className="fa fa-book" />
+          <IconFaBook className="icon" />
         </button>
       </div>
     </Draggable>
@@ -204,10 +213,10 @@ export default observer(({ store, actions }) => (
           <b className={cx({ hidden: !tools.heading.sub })}>DEVTOOLS</b>
         </div>
         <button className="right" onClick={handleOnCloseTools} data-tip="CLOSE">
-          <i className="fa fa-chevron-circle-right" />
+          <IconFaChevronCircleRight className="icon" />
         </button>
         <button className="right" onClick={handleOnOpenDoc} data-tip="DOCS">
-          <i className="fa fa-book" />
+          <IconFaBook className="icon" />
         </button>
       </div>
       {(store.selected.form && store.selected.key)

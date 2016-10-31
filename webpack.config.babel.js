@@ -8,17 +8,8 @@ const loaders = [{
   exclude: /node_modules/,
   loader: 'babel-loader',
 }, {
-  test: /\.json$/,
-  loader: 'json-loader',
-}, {
   test: /\.css$/,
   loader: 'style-loader!css-loader!postcss-loader',
-}, {
-  test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/,
-  loader: 'url-loader?mimetype=application/font-woff',
-}, {
-  test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/,
-  loader: 'file-loader?name=[name].[ext]',
 }];
 
 const postcss = $webpack => [

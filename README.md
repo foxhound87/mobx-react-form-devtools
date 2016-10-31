@@ -24,7 +24,8 @@ npm install --save mobx-react-form-devtools
 ## Usage
 
 ```javascript
-import MobxReactFormDevTools from './mobx-react-form-devtools';
+import MobxReactFormDevTools from 'mobx-react-form-devtools';
+import 'mobx-react-form-devtools/style/devtools.css';';
 
 // register forms
 MobxReactFormDevTools.register({
@@ -35,6 +36,13 @@ MobxReactFormDevTools.register({
 
 // select form to show into the devtools
 MobxReactFormDevTools.select('registerForm');
+```
+
+## Link DevTools to Demo
+
+```bash
+❯ git clone -b master git@github.com:foxhound87/mobx-react-form-devtools.git mobx-react-form-devtools--master
+❯ ln -s ../mobx-react-form-devtools--master ./mobx-react-form--demo/devtools
 ```
 
 ## Contributing
