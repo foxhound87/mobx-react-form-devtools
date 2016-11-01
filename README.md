@@ -36,6 +36,9 @@ MobxReactFormDevTools.register({
 
 // select form to show into the devtools
 MobxReactFormDevTools.select('registerForm');
+
+// render the component
+<MobxReactFormDevTools.UI />
 ```
 
 ## Screenshot
