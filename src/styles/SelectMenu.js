@@ -10,8 +10,6 @@ export default {
     height: '28px',
     padding: '5px 35px 5px 10px',
     fontSize: '14px',
-    webkitAppearance: 'none',
-    mozAppearance: 'none',
     appearance: 'none',
     backgroundColor: theme.base00,
     backgroundPosition: 'right 50%',
