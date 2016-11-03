@@ -36,7 +36,6 @@
     "devtools"
   ],
   "files": [
-    "style",
     "es6",
     "lib",
     "umd"
@@ -53,7 +52,7 @@
     }
   },
   "dependencies": {
-    "classnames": "2.2.5",
+    "glamor": "2.17.14",
     "lodash": "^4.16.2",
     "mobx-react": "3.5.8",
     "react-dock": "0.2.3",
@@ -81,7 +80,6 @@
     "chai": "3.5.0",
     "codecov": "1.0.1",
     "commitizen": "2.8.6",
-    "css-loader": "0.25.0",
     "cz-conventional-changelog": "1.2.0",
     "eslint": "3.8.0",
     "eslint-config-airbnb": "12.0.0",
@@ -93,14 +91,10 @@
     "mocha": "3.1.2",
     "npm-run-all": "3.1.0",
     "nyc": "8.3.1",
-    "postcss-import": "8.1.2",
-    "postcss-loader": "1.1.0",
-    "postcss-url": "5.1.2",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "rimraf": "2.5.4",
     "semantic-release": "4.3.5",
-    "style-loader": "0.13.1",
     "webpack": "1.13.2"
   }
 }
