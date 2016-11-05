@@ -18,6 +18,8 @@ const fieldPropsToPick = [
   'isDirty',
   'error',
   'related',
+  'rules',
+  'validate',
 ];
 
 const parseFormData = form =>
