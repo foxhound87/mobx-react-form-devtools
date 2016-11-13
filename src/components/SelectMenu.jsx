@@ -12,7 +12,6 @@ export default observer(({ store, handlers }) =>
     className={style.select}
   >
     {_.map(store.menu, ($val, $key) =>
-      <option key={$key} value={$key}>{$val}</option>
-    )}
-  </select>
+      <option key={$key} value={$key}>{$val}</option>)}
+  </select>,
 );

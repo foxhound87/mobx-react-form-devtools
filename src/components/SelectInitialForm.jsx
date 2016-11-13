@@ -18,7 +18,6 @@ export default observer(({ store, handlers }) =>
         onClick={handlers.handleInitialFormSelect}
       >
         <Icons.FaCircleO className={style.icon} /> {val}
-      </button>
-    )}
-  </div>
+      </button>)}
+  </div>,
 );

@@ -16,8 +16,8 @@ export default observer(({ store, handlers }) => (
   <div className={style.dock}>
     <ReactTooltip />
     <Dock
-      defaultSize={store.tools.open ? store.dock.size : 0}
-      size={store.tools.open ? store.dock.size : 0}
+      defaultSize={store.open ? store.dock.size : 0}
+      size={store.open ? store.dock.size : 0}
       onSizeChange={handlers.handleOnSizeChange}
       position={store.dock.position}
       fluid={store.dock.fluid}
@@ -25,7 +25,7 @@ export default observer(({ store, handlers }) => (
       dimMode={store.dock.mode}
       dockStyle={store.dock.style}
     >
-      <div className={merge(style.draggable, store.tools.open && $U.hidden)}>
+      <div className={merge(style.draggable, store.open && $U.hidden)}>
         <Draggable handlers={handlers} />
       </div>
 

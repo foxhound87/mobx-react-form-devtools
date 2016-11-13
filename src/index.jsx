@@ -12,6 +12,8 @@ export default {
 
   theme: $actions.theme,
 
+  open: $actions.open,
+
   register: $actions.registerForm,
 
   select: $actions.selectForm,

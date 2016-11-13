@@ -36,5 +36,5 @@ export default observer(({ store, handlers }) =>
       theme={store.theme}
       isLightTheme={false}
     />
-  </div>
+  </div>,
 );

@@ -3,6 +3,7 @@ import theme from './styles/_.theme';
 
 export default observable({
   theme,
+  open: false,
   forms: {},
   menu: {},
   select: {},
@@ -11,7 +12,6 @@ export default observable({
     form: null,
   },
   tools: {
-    open: true,
     heading: {
       name: true,
       sub: true,

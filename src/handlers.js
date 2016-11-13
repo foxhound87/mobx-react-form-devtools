@@ -16,7 +16,8 @@ export default $actions => ({
 
   handleOnOpenDoc: (e) => {
     e.preventDefault();
-    window.open('https://foxhound87.github.io/mobx-react-form/', '_blank'); // eslint-disable-line
+    const link = 'https://foxhound87.github.io/mobx-react-form/';
+    window.open(link, '_blank'); // eslint-disable-line
   },
 
   handleSelect: (e) => {

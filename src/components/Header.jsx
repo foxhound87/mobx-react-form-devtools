@@ -7,7 +7,7 @@ import $U from '../styles/_.utils';
 import style from '../styles/Header';
 
 export default observer(({ store, handlers }) => (
-  <div className={merge(style.heading, !store.tools.open && $U.hidden)}>
+  <div className={merge(style.heading, !store.open && $U.hidden)}>
     <div className={$U.left}>
       <b className={merge(style.hli, !store.tools.heading.name && $U.hidden)}>
         MOBX-REACT-FORM

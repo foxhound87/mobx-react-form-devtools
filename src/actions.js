@@ -3,9 +3,9 @@ import _ from 'lodash';
 
 export default $store => ({
 
-  theme: action((theme) => {
-    _.merge($store.theme, theme);
-  }),
+  open: action(flag => _.set($store, 'open', flag)),
+
+  theme: action(theme => _.merge($store.theme, theme)),
 
   selectForm: action((key) => {
     _.map($store.select, ($val, $key) => _.set($store.select, $key, false));
@@ -24,7 +24,7 @@ export default $store => ({
     let $flag;
     if (toggle === 'open') $flag = true;
     if (toggle === 'close') $flag = false;
-    _.set($store.tools, 'open', $flag);
+    _.set($store, 'open', $flag);
   }),
 
   changeDockSize: action((size) => {
