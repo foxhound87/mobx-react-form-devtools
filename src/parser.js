@@ -10,6 +10,7 @@ const fieldPropsToPick = [
   'disabled',
   'focus',
   'touched',
+  'changed',
   'hasError',
   'isValid',
   'isEmpty',
@@ -26,10 +27,13 @@ const parseFormData = form =>
   toJS(_.pick(form, [
     'hasError',
     'isValid',
-    'isEmpty',
-    'isDefault',
-    'isPristine',
     'isDirty',
+    'isPristine',
+    'isDefault',
+    'isEmpty',
+    'focus',
+    'touched',
+    'changed',
   ]));
 
 const parseFieldsData = fields =>
