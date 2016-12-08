@@ -7,6 +7,7 @@ const fieldPropsToPick = [
   'initial',
   'value',
   'label',
+  'placeholder',
   'disabled',
   'focus',
   'touched',
