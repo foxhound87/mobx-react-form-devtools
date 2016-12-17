@@ -33,5 +33,14 @@ export default $store => ({
     _.set($store.tools, 'heading.sub', (size > 0.11));
   }),
 
+  handleFormControls: action((type) => {
+    switch (type) {
+      case 'submit': $store.selected.form.submit(); break;
+      case 'clear': $store.selected.form.clear(); break;
+      case 'reset': $store.selected.form.reset(); break;
+      default: $store.selected.form.submit();
+    }
+  }),
+
 });
 

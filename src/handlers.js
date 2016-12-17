@@ -29,4 +29,19 @@ export default $actions => ({
     $actions.selectForm(e.target.value);
   },
 
+  handleFormOnSubmit: (e) => {
+    e.preventDefault();
+    $actions.handleFormControls('submit');
+  },
+
+  handleFormOnClear: (e) => {
+    e.preventDefault();
+    $actions.handleFormControls('clear');
+  },
+
+  handleFormOnReset: (e) => {
+    e.preventDefault();
+    $actions.handleFormControls('reset');
+  },
+
 });
