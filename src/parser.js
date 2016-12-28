@@ -21,7 +21,7 @@ const fieldPropsToPick = [
   'error',
   'related',
   'rules',
-  'validate',
+  'validators',
 ];
 
 const parseFormData = form =>
