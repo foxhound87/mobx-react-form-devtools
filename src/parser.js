@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 const fieldPropsToPick = [
   'path',
+  'bindings',
   'default',
   'initial',
   'value',
