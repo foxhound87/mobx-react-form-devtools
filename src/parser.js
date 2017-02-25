@@ -9,6 +9,7 @@ const fieldPropsToPick = [
   'value',
   'label',
   'placeholder',
+  'validating',
   'disabled',
   'focus',
   'touched',
