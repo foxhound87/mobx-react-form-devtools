@@ -26,6 +26,7 @@ const fieldPropsToPick = [
   'related',
   'rules',
   'validators',
+  'size',
 ];
 
 const parseFormData = form =>
@@ -41,6 +42,7 @@ const parseFormData = form =>
     'focus',
     'touched',
     'changed',
+    'size',
   ]));
 
 const parseFieldsData = fields =>
