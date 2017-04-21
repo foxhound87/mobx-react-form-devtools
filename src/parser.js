@@ -24,9 +24,11 @@ const fieldPropsToPick = [
   'isPristine',
   'isDirty',
   'error',
-  'related',
   'rules',
   'validators',
+  'related',
+  'extra',
+  'options',
   'size',
 ];
 
