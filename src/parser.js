@@ -12,6 +12,8 @@ const fieldPropsToPick = [
   'placeholder',
   'submitting',
   'validating',
+  'clearing',
+  'resetting',
   'autoFocus',
   'focused',
   'disabled',
@@ -27,8 +29,8 @@ const fieldPropsToPick = [
   'rules',
   'validators',
   'related',
-  'extra',
   'options',
+  'extra',
   'size',
 ];
 
@@ -36,6 +38,8 @@ const parseFormData = form =>
   toJS(_.pick(form, [
     'submitting',
     'validating',
+    'clearing',
+    'resetting',
     'hasError',
     'isValid',
     'isDirty',

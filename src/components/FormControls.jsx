@@ -7,7 +7,9 @@ import Icons from '../icons';
 import $U from '../styles/_.utils';
 import style from '../styles/RenderFormData';
 
-export default observer(({ handlers }) =>
+const { icon, iconOptionsActive } = style.controls;
+
+export default observer(({ store, handlers }) => (
   <div className={merge($U.clearfix)}>
     <ReactTooltip />
     <button
@@ -16,7 +18,7 @@ export default observer(({ handlers }) =>
       onClick={handlers.handleFormOnSubmit}
       data-tip="SUBMIT"
     >
-      <Icons.FaDotCircleO className={style.controls.icon} />
+      <Icons.FaDotCircleO className={icon} />
     </button>
     <button
       type="button"
@@ -24,7 +26,7 @@ export default observer(({ handlers }) =>
       onClick={handlers.handleFormOnClear}
       data-tip="CLEAR"
     >
-      <Icons.FaEraser className={style.controls.icon} />
+      <Icons.FaEraser className={icon} />
     </button>
     <button
       type="button"
@@ -32,7 +34,15 @@ export default observer(({ handlers }) =>
       onClick={handlers.handleFormOnReset}
       data-tip="RESET"
     >
-      <Icons.FaRefresh className={style.controls.icon} />
+      <Icons.FaRefresh className={icon} />
     </button>
-  </div>,
-);
+    <button
+      type="button"
+      className={merge($U.button, style.controls.button)}
+      onClick={handlers.handleToggleOptions}
+      data-tip="OPTIONS"
+    >
+      <Icons.FaCog className={merge(icon, store.showOptions && iconOptionsActive)} />
+    </button>
+  </div>
+));

@@ -1,4 +1,5 @@
 import FaTh from 'react-icons/lib/fa/th';
+import FaCog from 'react-icons/lib/fa/cog';
 import FaBars from 'react-icons/lib/fa/bars';
 import FaBook from 'react-icons/lib/fa/book';
 import FaRefresh from 'react-icons/lib/fa/refresh';
@@ -10,6 +11,7 @@ import FaChevronCircleRight from 'react-icons/lib/fa/chevron-circle-right';
 
 export default {
   FaTh,
+  FaCog,
   FaBars,
   FaBook,
   FaRefresh,

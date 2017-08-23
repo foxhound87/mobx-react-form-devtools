@@ -27,10 +27,12 @@ export default $store => ({
     _.set($store, 'open', $flag);
   }),
 
+  toggleOptions: action(() => {
+    _.set($store, 'showOptions', !$store.showOptions);
+  }),
+
   changeDockSize: action((size) => {
     _.set($store.dock, 'size', size);
-    _.set($store.tools, 'heading.name', (size > 0.22));
-    _.set($store.tools, 'heading.sub', (size > 0.11));
   }),
 
   handleFormControls: action((type) => {

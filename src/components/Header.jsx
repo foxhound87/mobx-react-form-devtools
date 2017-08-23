@@ -9,10 +9,10 @@ import style from '../styles/Header';
 export default observer(({ store, handlers }) => (
   <div className={merge(style.heading, !store.open && $U.hidden)}>
     <div className={$U.left}>
-      <b className={merge(style.hli, !store.tools.heading.name && $U.hidden)}>
+      <b className={style.hli}>
         MOBX-REACT-FORM
       </b>
-      <b className={merge(style.hlb, !store.tools.heading.sub && $U.hidden)}>
+      <b className={style.hlb}>
         DEVTOOLS
       </b>
     </div>

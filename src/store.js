@@ -1,8 +1,10 @@
 import { observable } from 'mobx';
 import theme from './styles/_.theme';
+import makeFormOptions from './form.options';
 
 export default observable({
   theme,
+  showOptions: false,
   open: false,
   forms: {},
   menu: {},
@@ -11,20 +13,17 @@ export default observable({
     key: null,
     form: null,
   },
-  tools: {
-    heading: {
-      name: true,
-      sub: true,
-    },
-  },
   dock: {
     visible: true,
-    fluid: true,
-    size: 0.30,
+    fluid: false,
+    size: 350,
     position: 'right',
     mode: 'none',
     style: {
       background: theme.base00,
     },
+  },
+  get formOptions() {
+    return makeFormOptions(this.selected.form);
   },
 });

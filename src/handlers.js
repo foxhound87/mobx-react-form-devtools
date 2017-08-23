@@ -29,6 +29,11 @@ export default $actions => ({
     $actions.selectForm(e.target.value);
   },
 
+  handleToggleOptions: (e) => {
+    e.preventDefault();
+    $actions.toggleOptions();
+  },
+
   handleFormOnSubmit: (e) => {
     e.preventDefault();
     $actions.handleFormControls('submit');

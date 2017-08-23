@@ -7,17 +7,17 @@ import Icons from '../icons';
 import $U from '../styles/_.utils';
 import style from '../styles/SelectInitialForm';
 
-export default observer(({ store, handlers }) =>
+export default observer(({ store, handlers }) => (
   <div>
     <h4>SELECT A FORM</h4>
     {mapo(store.menu, (key, val) =>
-      <button
+      (<button
         key={key}
         value={key}
         className={merge($U.button, style.btn)}
         onClick={handlers.handleInitialFormSelect}
       >
         <Icons.FaCircleO className={style.icon} /> {val}
-      </button>)}
-  </div>,
-);
+      </button>))}
+  </div>
+));
