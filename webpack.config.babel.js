@@ -21,8 +21,10 @@ export default {
     extensions: ['', '.js', '.jsx', '.json'],
   },
   externals: {
-    react: 'react',
-    mobx: 'mobx',
+    'mobx-react-form': 'mobx-react-form',
+    'mobx-react': 'mobx-react',
+    'react': 'react',
+    'mobx': 'mobx',
   },
   module: { loaders },
 };
