@@ -2,6 +2,9 @@ import { style } from 'glamor';
 import theme from './_.theme';
 
 export default {
+  container: style({
+    marginLeft: '10px',
+  }),
   heading: style({
     color: theme.base00,
     padding: '10px',

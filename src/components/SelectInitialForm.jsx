@@ -11,13 +11,13 @@ export default observer(({ store, handlers }) => (
   <div>
     <h4>SELECT A FORM</h4>
     {mapo(store.menu, (key, val) =>
-      (<button
+      // eslint-disable-next-line
+      <button
         key={key}
         value={key}
         className={merge($U.button, style.btn)}
         onClick={handlers.handleInitialFormSelect}
-      >
-        <Icons.FaCircleO className={style.icon} /> {val}
-      </button>))}
+      ><Icons.FaCircleO className={style.icon} /> {val}
+      </button>)}
   </div>
 ));

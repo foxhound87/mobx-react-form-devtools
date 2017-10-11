@@ -31,16 +31,18 @@ export default observer(({ store, handlers }) => (
         hideRoot
         data={parseFormData(store.selected.form)}
         theme={store.theme}
-        isLightTheme={false}
+        invertTheme={false}
       />}
     <h4 className={style.heading}>
       <Icons.FaBars className={style.icon} /> Fields
     </h4>
-    <JSONTree
-      hideRoot
-      data={parseFieldsData(store.selected.form.fields)}
-      theme={store.theme}
-      isLightTheme={false}
-    />
+    <div className={style.container}>
+      <JSONTree
+        hideRoot
+        data={parseFieldsData(store.selected.form.fields)}
+        theme={store.theme}
+        invertTheme={false}
+      />
+    </div>
   </div>
 ));
