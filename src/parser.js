@@ -1,4 +1,4 @@
-import { toJS } from 'mobx';
+import { values as mobxValues, toJS } from 'mobx';
 import _ from 'lodash';
 
 const fieldPropsToPick = [
@@ -52,8 +52,13 @@ const parseFormData = form =>
     'size',
   ]));
 
+const getObservableMapValues = observableMap =>
+  mobxValues
+    ? mobxValues(observableMap)
+    : observableMap.values();
+
 const parseFieldsData = fields =>
-  _.reduce(fields.values(), (obj, field) => {
+  _.reduce(getObservableMapValues(fields), (obj, field) => {
     const $nested = $fields => ($fields.size !== 0)
       ? parseFieldsData($fields)
       : undefined;
