@@ -66,7 +66,7 @@
     "react-tooltip": "3.5.0"
   },
   "peerDependencies": {
-    "mobx": "^2.5.0 || ^3.0.0 || ^4.0.0",
+    "mobx": "^2.5.0 || ^3.0.0 || ^4.0.0 || ^5.0.0",
     "mobx-react": "^3.0.0 || ^4.0.0 || ^5.0.0",
     "mobx-react-form": "^1.x.x",
     "prop-types": "^15.6.0",
