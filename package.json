@@ -1,7 +1,7 @@
 {
   "name": "mobx-react-form-devtools",
   "license": "MIT",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "author": "Claudio Savino <claudio.savino@me.com> (https://twitter.com/foxhound87)",
   "description": "DevTools for MobX React Form",
   "homepage": "https://www.npmjs.com/package/mobx-react-form-devtools",
@@ -31,7 +31,7 @@
     "coverage:check": "nyc check-coverage --satements 0 --branches 0 --functions 0 --lines 0",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "release": "semantic-release pre && npm publish && semantic-release post",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -44,12 +44,12 @@
     "devtools"
   ],
   "files": [
-    "es6",
+    "src",
     "lib",
     "umd"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=6.0.0"
   },
   "config": {
     "commitizen": {
@@ -96,9 +96,9 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "husky": "^0.12.0",
-    "mobx5": "npm:mobx@^5.0.0",
-    "mobx4": "npm:mobx@^4.0.0",
     "mobx3": "npm:mobx@^3.0.0",
+    "mobx4": "npm:mobx@^4.0.0",
+    "mobx5": "npm:mobx@^5.0.0",
     "mocha": "3.2.0",
     "npm-run-all": "3.1.2",
     "nyc": "10.0.0",
@@ -106,7 +106,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "rimraf": "2.5.4",
-    "semantic-release": "^7.0.2",
+    "semantic-release": "^15.8.1",
     "webpack": "1.14.0"
   }
 }
