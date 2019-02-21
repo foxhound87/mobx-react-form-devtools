@@ -4,6 +4,6 @@ import style from '../styles/SimpleCheckbox';
 
 export default observer(({ field }) => (
   <label htmlFor={field.id} className={style.label}>
-    <input {...field.bind()} className={style.input} /> {field.label}
+    <input {...field.bind()} className={style.input} /> {field.label || field.name}
   </label>
 ));
