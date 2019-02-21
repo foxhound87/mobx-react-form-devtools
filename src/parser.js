@@ -1,56 +1,13 @@
 import { values as mobxValues, toJS } from 'mobx';
 import _ from 'lodash';
 
-const fieldPropsToPick = [
-  'path',
-  'type',
-  'bindings',
-  'default',
-  'initial',
-  'value',
-  'label',
-  'placeholder',
-  'submitting',
-  'validating',
-  'clearing',
-  'resetting',
-  'autoFocus',
-  'focused',
-  'disabled',
-  'touched',
-  'changed',
-  'hasError',
-  'isValid',
-  'isEmpty',
-  'isDefault',
-  'isPristine',
-  'isDirty',
-  'error',
-  'rules',
-  'validators',
-  'related',
-  'options',
-  'extra',
-  'size',
-];
+import {
+  fieldPropsToPick,
+  formPropsToPick,
+} from './props';
 
 const parseFormData = form =>
-  toJS(_.pick(form, [
-    'submitting',
-    'validating',
-    'clearing',
-    'resetting',
-    'hasError',
-    'isValid',
-    'isDirty',
-    'isPristine',
-    'isDefault',
-    'isEmpty',
-    'focus',
-    'touched',
-    'changed',
-    'size',
-  ]));
+  toJS(_.pick(form, formPropsToPick));
 
 const getObservableMapValues = observableMap =>
   mobxValues
