@@ -1,4 +1,3 @@
-
 const base = [
   'size',
   'submitted',
@@ -29,6 +28,7 @@ const fieldPropsToPick = [
   'path',
   'type',
   'bindings',
+  'options',
   'default',
   'initial',
   'value',
