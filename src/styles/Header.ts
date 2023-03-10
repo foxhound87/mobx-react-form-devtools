@@ -1,12 +1,12 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 import theme from './_.theme';
 
 export default {
-  btn: style({
+  btn: css({
     float: 'right',
     margin: '-3px',
   }),
-  icon: style({
+  icon: css({
     'fontSize': '22px',
     'color': theme.base0B,
     'paddingRight': '10px',
@@ -14,15 +14,15 @@ export default {
       color: theme.base0A,
     },
   }),
-  hli: style({
+  hli: css({
     color: theme.base0D,
     paddingLeft: '25px',
   }),
-  hlb: style({
+  hlb: css({
     color: theme.base09,
     paddingLeft: '10px',
   }),
-  heading: style({
+  heading: css({
     fontSize: '14px',
     background: theme.base00,
     color: theme.base00,

@@ -17,7 +17,7 @@ const setCheckboxProp = fields =>
 const getBooleanOptions = form =>
   _.pickBy(form.state.options.options, _.isBoolean);
 
-export default (form) => {
+export const makeFormOptions = (form) => {
   const fields = getBooleanOptions(form);
   const types = setCheckboxProp(fields);
   const observers = setObserversProp(form, fields);

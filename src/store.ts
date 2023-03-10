@@ -1,8 +1,8 @@
-import { observable } from 'mobx';
+import { makeAutoObservable } from 'mobx';
 import theme from './styles/_.theme';
-import makeFormOptions from './form.options';
+import {makeFormOptions} from './form.options';
 
-export default observable({
+export default makeAutoObservable({
   theme,
   showOptions: false,
   open: false,

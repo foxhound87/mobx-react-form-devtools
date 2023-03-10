@@ -1,11 +1,11 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 import theme from './_.theme';
 
 export default {
-  container: style({
+  container: css({
     marginLeft: '10px',
   }),
-  heading: style({
+  heading: css({
     color: theme.base00,
     padding: '10px',
     margin: '44px 0 0 0',
@@ -13,14 +13,14 @@ export default {
     fontSize: '15px',
     textTransform: 'uppercase',
   }),
-  select: style({
+  select: css({
     textAlign: 'right',
   }),
-  icon: style({
+  icon: css({
     marginTop: '-3px',
   }),
   controls: {
-    button: style({
+    button: css({
       'borderRadius': 0,
       'width': '25%',
       'display': 'block',
@@ -37,10 +37,10 @@ export default {
         color: theme.base00,
       },
     }),
-    icon: style({
+    icon: css({
       color: theme.base00,
     }),
-    iconOptionsActive: style({
+    iconOptionsActive: css({
       'color': theme.base0B,
       ':hover': {
         color: theme.base00,

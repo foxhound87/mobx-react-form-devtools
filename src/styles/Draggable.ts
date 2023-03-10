@@ -1,21 +1,22 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 import theme from './_.theme';
 
 export default {
-  icon: style({
+  icon: css({
     fontSize: '15px',
   }),
-  dragIcon: style({
+  dragIcon: css({
     fontSize: '22px',
     color: theme.base04,
   }),
-  draggable: style({
+  draggable: css({
+    cursor: 'ns-resize',
     padding: '5px 5px 7px 5px',
     background: theme.base00,
     borderTopLeftRadius: '5px',
     borderBottomLeftRadius: '5px',
   }),
-  btn: style({
+  btn: css({
     'display': 'block',
     'width': '20px',
     'height': '20px',

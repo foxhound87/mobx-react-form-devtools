@@ -1,13 +1,13 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 
 export default {
-  dock: style({
+  dock: css({
     'fontFamily': 'Helvetica Neue',
     '@media (min-width: 0px) and (max-width: 450px)': {
       display: 'none',
     },
   }),
-  draggable: style({
+  draggable: css({
     position: 'fixed',
     right: '0px',
     top: '100px',

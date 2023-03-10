@@ -1,8 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { merge } from 'glamor';
+import cx from 'classnames';
 import Dock from 'react-dock';
-import ReactTooltip from 'react-tooltip';
 
 import Header from './Header';
 import Draggable from './Draggable';
@@ -13,8 +12,7 @@ import $U from '../styles/_.utils';
 import style from '../styles/Dock';
 
 export default observer(({ store, handlers }) => (
-  <div className={style.dock}>
-    <ReactTooltip />
+  <div className={cx(style.dock)}>
     <Dock
       defaultSize={store.open ? store.dock.size : 0}
       size={store.open ? store.dock.size : 0}
@@ -25,7 +23,7 @@ export default observer(({ store, handlers }) => (
       dimMode={store.dock.mode}
       dockStyle={store.dock.style}
     >
-      <div className={merge(style.draggable, store.open && $U.hidden)}>
+      <div className={cx(style.draggable, store.open && $U.hidden)}>
         <Draggable handlers={handlers} />
       </div>
 

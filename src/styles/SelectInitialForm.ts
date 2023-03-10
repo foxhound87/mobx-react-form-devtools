@@ -1,11 +1,11 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 import theme from './_.theme';
 
 export default {
-  icon: style({
+  icon: css({
     color: theme.base0A,
   }),
-  btn: style({
+  btn: css({
     'margin': 0,
     'width': '100%',
     'color': theme.base04,

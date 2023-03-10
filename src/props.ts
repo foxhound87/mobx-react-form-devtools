@@ -9,6 +9,7 @@ const base = [
 const shared = [
   'clearing',
   'resetting',
+  'hasError',
   'isValid',
   'isDirty',
   'isPristine',
@@ -20,11 +21,12 @@ const shared = [
   'focused',
   'blurred',
   'changed',
-  'hasError',
   'error',
 ];
 
 const fieldPropsToPick = [
+  'id',
+  'name',
   'path',
   'type',
   'bindings',
@@ -46,7 +48,7 @@ const formPropsToPick = [
   ...shared,
 ];
 
-export default {
+export {
   fieldPropsToPick,
   formPropsToPick,
 };

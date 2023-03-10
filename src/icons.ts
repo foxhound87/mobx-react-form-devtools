@@ -9,7 +9,7 @@ import FaDotCircleO from 'react-icons/lib/fa/dot-circle-o';
 import FaChevronLeft from 'react-icons/lib/fa/chevron-left';
 import FaChevronCircleRight from 'react-icons/lib/fa/chevron-circle-right';
 
-export default {
+export {
   FaTh,
   FaCog,
   FaBars,

@@ -1,9 +1,9 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { merge } from 'glamor';
+import cx from 'classnames';
 
 import { mapo } from '../utils';
-import Icons from '../icons';
+import { FaCircleO } from '../icons';
 import $U from '../styles/_.utils';
 import style from '../styles/SelectInitialForm';
 
@@ -15,9 +15,9 @@ export default observer(({ store, handlers }) => (
       <button
         key={key}
         value={key}
-        className={merge($U.button, style.btn)}
+        className={cx($U.button, style.btn)}
         onClick={handlers.handleInitialFormSelect}
-      ><Icons.FaCircleO className={style.icon} /> {val}
+      ><FaCircleO className={style.icon} /> {val}
       </button>)}
   </div>
 ));

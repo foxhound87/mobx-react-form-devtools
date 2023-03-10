@@ -1,8 +1,8 @@
-import { style } from 'glamor';
+import { css } from '@emotion/css'
 import theme from './_.theme';
 
 export default {
-  select: style({
+  select: css({
     border: 0,
     margin: '-5px',
     color: theme.base0B,

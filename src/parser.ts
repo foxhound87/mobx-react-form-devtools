@@ -32,7 +32,7 @@ const parseFieldsData = fields =>
   }, {});
 
 
-export default {
+export {
   parseFormData,
   parseFieldsData,
 };
