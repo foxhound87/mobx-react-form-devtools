@@ -43,7 +43,7 @@
     "umd"
   ],
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=16.0.0"
   },
   "config": {
     "commitizen": {
@@ -84,7 +84,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "rimraf": "^2.5.4",
-    "semantic-release": "^20.1.1",
+    "semantic-release": "^19.0.5",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
     "ts-loader": "^9.4.2",
