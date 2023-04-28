@@ -1,5 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
+  "plugins": ["import"],
   "rules": {
     "import/no-unresolved": "off",
     "import/extensions": "off",

@@ -2,18 +2,22 @@
 
 ##### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-react-form)
 
-[![Travis Build](https://img.shields.io/travis/foxhound87/mobx-react-form-devtools/master.svg)](https://travis-ci.org/foxhound87/mobx-react-form-devtools)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/foxhound87/mobx-react-form-devtools/master.svg)](https://codecov.io/gh/foxhound87/mobx-react-form-devtools)
-[![Downloads](https://img.shields.io/npm/dt/mobx-react-form-devtools.svg)]()
-[![npm](https://img.shields.io/npm/v/mobx-react-form-devtools.svg)]()
-[![node](https://img.shields.io/node/v/mobx-react-form-devtools.svg)]()
-[![GitHub license](https://img.shields.io/github/license/foxhound87/mobx-react-form-devtools.svg)]()
+---
 
 [![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mobx-react-form-devtools/)
 
----
+![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/foxhound87/mobx-react-form-devtools/ci.yml?branch=next)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/foxhound87/mobx-react-form-devtools)
+![npm bundle size](https://img.shields.io/bundlephobia/min/mobx-react-form-devtools)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/foxhound87/mobx-react-form-devtools/master.svg)](https://codecov.io/gh/foxhound87/mobx-react-form-devtools)
+[![node](https://img.shields.io/node/v/mobx-react-form-devtools.svg)]()
+[![GitHub license](https://img.shields.io/github/license/foxhound87/mobx-react-form-devtools.svg)]()
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/foxhound87/mobx-react-form-devtools)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/foxhound87/mobx-react-form-devtools)
+[![Downloads](https://img.shields.io/npm/dt/mobx-react-form-devtools.svg)]()
+[![Downloads](https://img.shields.io/npm/dm/mobx-react-form-devtools.svg)]()
 
-<br>
+---
 
 ## Install
 
@@ -23,7 +27,7 @@ npm install --save mobx-react-form-devtools
 
 ## Demo
 
-[MobX React Form DevTools Demo](https://foxhound87.github.io/mobx-react-form/demo.html)
+[MobX React Form DevTools Demo](https://foxhound87.github.io/mobx-react-form-demo)
 
 ## Usage
 
@@ -74,13 +78,6 @@ MobxReactFormDevTools.theme({
 ## Screenshot
 
 ![DevTools](https://github.com/foxhound87/mobx-react-form-devtools/blob/master/screenshot.png?raw=true)
-
-## Link DevTools to Demo
-
-```bash
-❯ git clone -b master git@github.com:foxhound87/mobx-react-form-devtools.git mobx-react-form-devtools--master
-❯ ln -s ../mobx-react-form-devtools--master ./mobx-react-form--demo/devtools
-```
 
 ## Contributing
 
