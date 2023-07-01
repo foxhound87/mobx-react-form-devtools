@@ -8,6 +8,7 @@ import FaCircleO from 'react-icons/lib/fa/circle-o';
 import FaDotCircleO from 'react-icons/lib/fa/dot-circle-o';
 import FaChevronLeft from 'react-icons/lib/fa/chevron-left';
 import FaChevronCircleRight from 'react-icons/lib/fa/chevron-circle-right';
+import FaWindows from 'react-icons/lib/md/desktop-windows';
 
 export {
   FaTh,
@@ -20,4 +21,5 @@ export {
   FaDotCircleO,
   FaChevronLeft,
   FaChevronCircleRight,
+  FaWindows,
 };

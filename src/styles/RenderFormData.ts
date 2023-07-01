@@ -16,6 +16,9 @@ export default {
   select: css({
     textAlign: 'right',
   }),
+  windowed: css({
+    marginTop: '45px',
+  }),
   icon: css({
     marginTop: '-3px',
   }),

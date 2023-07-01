@@ -1,7 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import cx from 'classnames';
-import { Tooltip } from 'react-tooltip';
 
 import {
   FaDotCircleO,
@@ -16,16 +15,11 @@ const { icon, iconOptionsActive } = style.controls;
 
 export default observer(({ store, handlers }) => (
   <div className={cx($U.clearfix)}>
-    <Tooltip
-      id="mobx-react-form-devtools--form-controls"
-      anchorSelect=".tooltip"
-    />
     <button
       type="button"
       className={cx($U.button, style.controls.button, 'tooltip')}
       onClick={handlers.handleFormOnSubmit}
-      data-tooltip-id="SUBMIT"
-      data-tooltip-content="SUBMIT"
+      title="Submit Form"
     >
       <FaDotCircleO className={icon} />
     </button>
@@ -33,8 +27,7 @@ export default observer(({ store, handlers }) => (
       type="button"
       className={cx($U.button, style.controls.button, 'tooltip')}
       onClick={handlers.handleFormOnClear}
-      data-tooltip-id="CLEAR"
-      data-tooltip-content="CLEAR"
+      title="Clear Form"
     >
       <FaEraser className={icon} />
     </button>
@@ -42,8 +35,7 @@ export default observer(({ store, handlers }) => (
       type="button"
       className={cx($U.button, style.controls.button, 'tooltip')}
       onClick={handlers.handleFormOnReset}
-      data-tooltip-id="RESET"
-      data-tooltip-content="RESET"
+      title="Reset Form"
     >
       <FaRefresh className={icon} />
     </button>
@@ -51,8 +43,7 @@ export default observer(({ store, handlers }) => (
       type="button"
       className={cx($U.button, style.controls.button, 'tooltip')}
       onClick={handlers.handleToggleOptions}
-      data-tooltip-id="OPTIONS"
-      data-tooltip-content="OPTIONS"
+      title="Form Settings"
     >
       <FaCog className={cx(icon, store.showOptions && iconOptionsActive)} />
     </button>

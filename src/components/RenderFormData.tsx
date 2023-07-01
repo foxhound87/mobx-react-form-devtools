@@ -19,10 +19,14 @@ import style from '../styles/RenderFormData';
 export default observer(({ store, handlers }) => (
   <div>
     <h4 className={cx(style.heading, $U.clearfix)}>
-      <div className={$U.left}>
+      <div className={cx($U.left, {
+        [style.windowed]: store.windowIsOpen
+      })}>
         <FaTh className={style.icon} /> Form
       </div>
-      <div className={cx($U.rigth, style.select)}>
+      <div className={cx($U.rigth, style.select, {
+        [style.windowed]: store.windowIsOpen
+      })}>
         <SelectMenu store={store} handlers={handlers} />
       </div>
     </h4>

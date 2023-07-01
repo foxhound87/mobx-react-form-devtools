@@ -49,4 +49,14 @@ export default $actions => ({
     $actions.handleFormControls('reset');
   },
 
+  handleOpenInWindow: (e) => {
+    e.preventDefault();
+    $actions.openInWindow();
+  },
+
+  handleOnCloseWindow: (e) => {
+    e.preventDefault();
+    $actions.onCloseWindow();
+  },
+
 });

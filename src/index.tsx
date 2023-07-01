@@ -1,12 +1,14 @@
-import 'react-tooltip/dist/react-tooltip.css'
 import React from 'react';
 import { observe, action } from 'mobx';
 import Dock from './components/Dock';
 import FormOptions from './components/FormOptions';
+import { WindowPortal } from './components/WindowPortal';
 
 import store from './store';
 import actions from './actions';
 import handlers from './handlers';
+import { observer } from 'mobx-react';
+import Window from './components/Window';
 
 const $actions = actions(store);
 const $handlers = handlers($actions);
@@ -27,8 +29,14 @@ export default {
 
   select: $actions.selectForm,
 
-  UI: () => (<Dock store={store} handlers={$handlers} />),
+  Options: () => <FormOptions form={store.formOptions} />,
 
-  Options: () => (<FormOptions form={store.formOptions} />),
+  UI: observer(() =>
+    store.windowIsOpen
+      ?<WindowPortal closeWindowPortal={$handlers.handleOnCloseWindow}>
+        <Window store={store} handlers={$handlers} />
+      </WindowPortal>
+      : <Dock store={store} handlers={$handlers} />
+  ),
 
 };

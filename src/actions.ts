@@ -44,5 +44,17 @@ export default $store => ({
     }
   }),
 
+  openInWindow: action(() => {
+    _.set($store, 'mode', 'windowed');
+    _.set($store.dock, 'position', 'left');
+    _.set($store.dock, 'fluid', true);
+  }),
+
+  onCloseWindow: action(() => {
+    _.set($store, 'mode', 'docked');
+    _.set($store.dock, 'position', 'right');
+    _.set($store.dock, 'fluid', false);
+  }),
+
 });
 

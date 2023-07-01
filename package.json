@@ -55,17 +55,16 @@
     "classnames": "^2.3.2",
     "lodash": "^4.17.21",
     "react-dock": "0.2.4",
-    "react-draggable": "^4.4.5",
     "react-icons": "^2.2.7",
-    "react-json-tree": "0.11.0",
-    "react-tooltip": "^5.8.3"
+    "react-json-tree": "0.11.0"
   },
   "peerDependencies": {
     "mobx": "*",
     "mobx-react": "*",
     "mobx-react-form": "*",
     "prop-types": "*",
-    "react": "*"
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

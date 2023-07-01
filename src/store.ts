@@ -3,6 +3,7 @@ import theme from './styles/_.theme';
 import {makeFormOptions} from './form.options';
 
 export default makeAutoObservable({
+  mode: 'docked',
   theme,
   showOptions: false,
   open: false,
@@ -26,4 +27,9 @@ export default makeAutoObservable({
   get formOptions() {
     return makeFormOptions(this.selected.form);
   },
+
+  get windowIsOpen() {
+    return this.mode === 'windowed';
+  },
+
 });

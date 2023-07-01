@@ -34,7 +34,7 @@ npm install --save mobx-react-form-devtools
 ```javascript
 import MobxReactFormDevTools from 'mobx-react-form-devtools';
 
-// register forms
+// register forms (mobx-react-form Instances)
 MobxReactFormDevTools.register({
   loginForm,
   registerForm,

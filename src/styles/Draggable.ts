@@ -10,11 +10,16 @@ export default {
     color: theme.base04,
   }),
   draggable: css({
-    cursor: 'ns-resize',
+    position: 'absolute',
+    right: 0,
+    top: 0,
     padding: '5px 5px 7px 5px',
     background: theme.base00,
     borderTopLeftRadius: '5px',
     borderBottomLeftRadius: '5px',
+  }),
+  dragButton: css({
+    cursor: 'ns-resize',
   }),
   btn: css({
     'display': 'block',
