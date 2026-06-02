@@ -5,11 +5,13 @@ export default {
   btn: css({
     float: 'right',
     margin: '-3px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '4px',
   }),
   icon: css({
-    'fontSize': '22px',
-    'color': theme.base0B,
-    'paddingRight': '10px',
+    color: theme.base0B,
     ':hover': {
       color: theme.base0A,
     },
@@ -17,21 +19,27 @@ export default {
   hli: css({
     color: theme.base0D,
     paddingLeft: '25px',
+    letterSpacing: '0.5px',
   }),
   hlb: css({
     color: theme.base09,
     paddingLeft: '10px',
+    letterSpacing: '0.5px',
   }),
   heading: css({
-    fontSize: '14px',
+    fontSize: '13px',
     background: theme.base00,
     color: theme.base00,
-    fontWeight: 'bold',
+    fontWeight: 600,
     textTransform: 'uppercase',
-    padding: '14px 0 13px 0',
+    padding: '14px 8px 13px 0',
     margin: 0,
     position: 'absolute',
     width: '100%',
     zIndex: 99,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    boxSizing: 'border-box',
   }),
 };

@@ -3,9 +3,9 @@ import { observer } from 'mobx-react';
 import cx from 'classnames';
 
 import {
-  FaChevronCircleRight,
-  FaBook,
-  FaWindows,
+  ChevronRight,
+  BookOpen,
+  Monitor,
 } from '../icons';
 
 import $U from '../styles/_.utils';
@@ -21,26 +21,28 @@ export default observer(({ store, handlers }) => (
         DEVTOOLS
       </b>
     </div>
-    {!store.windowIsOpen && <button
-      className={cx($U.button, style.btn)}
-      onClick={handlers.handleOnCloseTools}
-      title="Close Tools"
-    >
-      <FaChevronCircleRight className={cx(style.icon)} />
-    </button>}
-    <button
-      className={cx($U.button, style.btn)}
-      onClick={handlers.handleOnOpenDoc}
-      title="Open Documentation"
-    >
-      <FaBook className={style.icon} />
-    </button>
-    {!store.windowIsOpen && <button
-      className={cx($U.button, style.btn)}
-      onClick={handlers.handleOpenInWindow}
-      title="Open in new Window"
-    >
-      <FaWindows className={cx(style.icon)} />
-    </button>}
+    <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
+      {!store.windowIsOpen && <button
+        className={cx($U.button, style.btn)}
+        onClick={handlers.handleOnCloseTools}
+        title="Close Tools"
+      >
+        <ChevronRight size={20} className={cx(style.icon)} />
+      </button>}
+      <button
+        className={cx($U.button, style.btn)}
+        onClick={handlers.handleOnOpenDoc}
+        title="Open Documentation"
+      >
+        <BookOpen size={18} className={style.icon} />
+      </button>
+      {!store.windowIsOpen && <button
+        className={cx($U.button, style.btn)}
+        onClick={handlers.handleOpenInWindow}
+        title="Open in new Window"
+      >
+        <Monitor size={18} className={cx(style.icon)} />
+      </button>}
+    </div>
   </div>
 ));

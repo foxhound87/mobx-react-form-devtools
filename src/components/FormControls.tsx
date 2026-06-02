@@ -3,10 +3,10 @@ import { observer } from 'mobx-react';
 import cx from 'classnames';
 
 import {
-  FaDotCircleO,
-  FaEraser,
-  FaRefresh,
-  FaCog,
+  CircleDot,
+  Eraser,
+  RotateCw,
+  Settings,
 } from '../icons';
 import $U from '../styles/_.utils';
 import style from '../styles/RenderFormData';
@@ -21,7 +21,7 @@ export default observer(({ store, handlers }) => (
       onClick={handlers.handleFormOnSubmit}
       title="Submit Form"
     >
-      <FaDotCircleO className={icon} />
+      <CircleDot size={16} className={icon} />
     </button>
     <button
       type="button"
@@ -29,7 +29,7 @@ export default observer(({ store, handlers }) => (
       onClick={handlers.handleFormOnClear}
       title="Clear Form"
     >
-      <FaEraser className={icon} />
+      <Eraser size={16} className={icon} />
     </button>
     <button
       type="button"
@@ -37,7 +37,7 @@ export default observer(({ store, handlers }) => (
       onClick={handlers.handleFormOnReset}
       title="Reset Form"
     >
-      <FaRefresh className={icon} />
+      <RotateCw size={16} className={icon} />
     </button>
     <button
       type="button"
@@ -45,7 +45,7 @@ export default observer(({ store, handlers }) => (
       onClick={handlers.handleToggleOptions}
       title="Form Settings"
     >
-      <FaCog className={cx(icon, store.showOptions && iconOptionsActive)} />
+      <Settings size={16} className={cx(icon, store.showOptions && iconOptionsActive)} />
     </button>
   </div>
 ));

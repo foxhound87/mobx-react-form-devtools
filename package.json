@@ -59,7 +59,7 @@
     "react-json-tree": "0.11.0"
   },
   "peerDependencies": {
-    "mobx": "*",
+    "mobx": "^6.12.0",
     "mobx-react": "*",
     "mobx-react-form": "*",
     "prop-types": "*",

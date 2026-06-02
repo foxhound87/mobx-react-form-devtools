@@ -3,13 +3,13 @@ import theme from './_.theme';
 
 export default {
   window: css({
-    fontFamily: 'Helvetica Neue',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     background: theme.base00,
     marginTop: '-45px',
     paddingBottom: '20px',
   }),
   dock: css({
-    'fontFamily': 'Helvetica Neue',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     '@media (min-width: 0px) and (max-width: 450px)': {
       display: 'none',
     },
@@ -19,5 +19,4 @@ export default {
     right: '0px',
     top: '100px',
   }),
-
 };

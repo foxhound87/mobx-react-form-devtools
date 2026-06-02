@@ -4,10 +4,10 @@ import cx from 'classnames';
 // import Draggable from 'react-draggable';
 
 import {
-  FaBars,
-  FaChevronLeft,
-  FaBook,
-  FaWindows,
+  Menu,
+  ChevronLeft,
+  BookOpen,
+  Monitor,
 } from '../icons';
 
 import $U from '../styles/_.utils';
@@ -27,28 +27,28 @@ export default observer(({ handlers }) => {
   // >
     <div className={cx(style.draggable)} draggable onDragEnd={handleOnDragEnd}>
       <button className={cx($U.button, style.dragButton)}>
-        <FaBars className={cx(style.icon, style.dragIcon)} />
+        <Menu size={16} className={cx(style.icon, style.dragIcon)} />
       </button>
       <button
         className={cx($U.button, style.btn)}
         onClick={handlers.handleOnOpenTools}
         title="Open Tools"
       >
-        <FaChevronLeft className={style.icon} />
+        <ChevronLeft size={14} className={style.icon} />
       </button>
       <button
         className={cx($U.button, style.btn)}
         onClick={handlers.handleOpenInWindow}
         title="Open in new Window"
       >
-        <FaWindows className={style.icon} />
+        <Monitor size={14} className={style.icon} />
       </button>
       <button
         className={cx($U.button, style.btn)}
         onClick={handlers.handleOnOpenDoc}
         title="Open Documentation"
       >
-        <FaBook className={style.icon} />
+        <BookOpen size={14} className={style.icon} />
       </button>
     </div>
   // </Draggable>
