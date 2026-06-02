@@ -56,7 +56,8 @@
     "lodash": "^4.17.21",
     "react-dock": "0.2.4",
     "react-icons": "^2.2.7",
-    "react-json-tree": "0.11.0"
+    "react-json-tree": "0.11.0",
+    "lucide-react": "^1.17.0"
   },
   "peerDependencies": {
     "mobx": "^6.12.0",
@@ -77,7 +78,6 @@
     "eslint": "^8.35.0",
     "eslint-plugin-import": "^2.27.5",
     "husky": "^0.12.0",
-    "lucide-react": "^1.17.0",
     "mocha": "^10.2.0",
     "npm-run-all": "^3.1.2",
     "nyc": "^15.1.0",
