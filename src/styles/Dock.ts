@@ -5,7 +5,7 @@ export default {
   window: css({
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     background: theme.base00,
-    marginTop: '-45px',
+    marginTop: '-63px',
     paddingBottom: '20px',
   }),
   dock: css({

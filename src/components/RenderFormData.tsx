@@ -107,13 +107,14 @@ export default observer(({ store, handlers }) => {
         {store.showOptions
           && <FormOptions form={store.formOptions} />}
 
-        <br />
-        <JSONTree
-          hideRoot
-          data={parseFormData(store.selected.form)}
-          theme={store.theme}
-          invertTheme={false}
-        />
+        <div className={cx(style.container)}>
+          <JSONTree
+            hideRoot
+            data={parseFormData(store.selected.form)}
+            theme={store.theme}
+            invertTheme={false}
+          />
+        </div>
       </>}
 
       <Section

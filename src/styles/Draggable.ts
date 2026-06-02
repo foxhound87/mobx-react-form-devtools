@@ -23,13 +23,22 @@ export default {
     flexDirection: 'column',
     alignItems: 'center',
     gap: '4px',
+    willChange: 'top',
+    touchAction: 'none',
+  }),
+  dragging: css({
+    cursor: 'grabbing',
+    userSelect: 'none',
   }),
   dragButton: css({
-    cursor: 'ns-resize',
+    cursor: 'grab',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '2px',
+    ':active': {
+      cursor: 'grabbing',
+    },
   }),
   btn: css({
     display: 'flex',

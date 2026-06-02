@@ -3,7 +3,10 @@ import _ from 'lodash';
 
 export default $store => ({
 
-  open: action(flag => _.set($store, 'open', flag)),
+  open: action(flag => {
+    _.set($store, 'open', flag);
+    try { localStorage.setItem('mrf-open', flag); } catch {}
+  }),
 
   theme: action(theme => _.merge($store.theme, theme)),
 
@@ -25,6 +28,7 @@ export default $store => ({
     if (toggle === 'open') $flag = true;
     if (toggle === 'close') $flag = false;
     _.set($store, 'open', $flag);
+    try { localStorage.setItem('mrf-open', $flag); } catch {}
   }),
 
   toggleOptions: action(() => {

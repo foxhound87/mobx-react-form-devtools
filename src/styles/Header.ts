@@ -4,14 +4,21 @@ import theme from './_.theme';
 export default {
   btn: css({
     float: 'right',
-    margin: '-3px',
+    margin: '2px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '4px',
+    padding: '6px',
+    borderRadius: '4px',
+    background: 'transparent',
+    transition: 'background 120ms ease',
+    ':hover': {
+      background: theme.base01,
+    },
   }),
   icon: css({
     color: theme.base0B,
+    display: 'flex',
     ':hover': {
       color: theme.base0A,
     },
@@ -20,11 +27,13 @@ export default {
     color: theme.base0D,
     paddingLeft: '25px',
     letterSpacing: '0.5px',
+    display: 'block',
   }),
   hlb: css({
     color: theme.base09,
-    paddingLeft: '10px',
+    paddingLeft: '25px',
     letterSpacing: '0.5px',
+    display: 'block',
   }),
   heading: css({
     fontSize: '13px',

@@ -9,10 +9,10 @@ export default {
     display: 'none',
   }),
   root: css({
-    paddingTop: '44px',
+    paddingTop: '63px',
   }),
   windowed: css({
-    paddingTop: '45px',
+    paddingTop: '63px',
   }),
   heading: css({
     color: theme.base00,
