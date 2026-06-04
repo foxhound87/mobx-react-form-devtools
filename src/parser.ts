@@ -16,10 +16,17 @@ const pick = (obj, props) => {
 const parseFormData = form =>
   pick(form, formPropsToPick);
 
-const getObservableMapValues = observableMap =>
-  mobxValues
-    ? mobxValues(observableMap)
-    : observableMap.values();
+const getObservableMapValues = (fields: any) => {
+  // ArrayMap duck-typing: backed by observable array
+  if (fields && fields._isArrayMap) {
+    const result: any[] = [];
+    fields.forEach((value: any) => result.push(value));
+    return result;
+  }
+  return mobxValues
+    ? mobxValues(fields)
+    : fields.values();
+};
 
 const parseFieldsData = (fields: any) =>
   Array.from(getObservableMapValues(fields)).reduce((obj: any, field: any) => {
