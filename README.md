@@ -1,10 +1,11 @@
+### [Repo](https://github.com/foxhound87/mobx-react-form-devtools) &bull; [NPM](https://www.npmjs.com/package/mobx-react-form-devtools) &bull; [Documentation](https://foxhound87.github.io/mobx-react-form) &bull; [Live Demo](https://foxhound87.github.io/mobx-react-form-demo) &bull; [MobX React Form](https://github.com/foxhound87/mobx-react-form) &bull; [Join Discord Channel](https://discord.gg/CVV8w4zat4)
+
 # MobX React Form DevTools
 
-##### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-react-form)
+### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-react-form)
 
----
-
-[![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mobx-react-form-devtools/)
+[![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mobx-react-form-devtools)
+[![NPM Version](https://img.shields.io/npm/v/mobx-react-form-devtools?label=npm&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/mobx-react-form-devtools)
 
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/foxhound87/mobx-react-form-devtools/ci.yml?branch=next)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/foxhound87/mobx-react-form-devtools)
@@ -19,6 +20,17 @@
 
 ---
 
+## Features
+
+- Real-time form state inspection
+- Reactive field monitoring with MobX observables
+- Validation error display and debugging
+- Resizable, dockable DevTools panel
+- Custom theming support
+- Multiple form registration and switching
+
+---
+
 ## Install
 
 ```bash
@@ -27,7 +39,7 @@ npm install --save mobx-react-form-devtools
 
 ## Demo
 
-[MobX React Form DevTools Demo](https://foxhound87.github.io/mobx-react-form-demo)
+[Live Demo](https://foxhound87.github.io/mobx-react-form-demo) — Open the DevTools panel on any demo form.
 
 ## Usage
 
@@ -85,3 +97,6 @@ If you want to contribute to the development, do not hesitate to fork the repo a
 
 And don't forget to star the repo, I will ensure more frequent updates! Thanks!
 
+### License
+
+MIT
