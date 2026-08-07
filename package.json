@@ -60,7 +60,7 @@
     "lucide-react": "^1.17.0"
   },
   "peerDependencies": {
-    "mobx": "^6.12.0",
+    "mobx": "^6.12.0 || ^7.0.0",
     "mobx-react": "*",
     "mobx-react-form": "*",
     "prop-types": "*",
@@ -78,6 +78,7 @@
     "eslint": "^8.35.0",
     "eslint-plugin-import": "^2.27.5",
     "husky": "^0.12.0",
+    "mobx": "^6.12.0 || ^7.0.0",
     "mocha": "^10.2.0",
     "npm-run-all": "^3.1.2",
     "nyc": "^15.1.0",

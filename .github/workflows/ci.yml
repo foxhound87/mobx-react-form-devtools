@@ -6,20 +6,26 @@ on:
 jobs:
   CI:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mobx: [6, 7]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - run: npm install --force
+      - name: Install MobX ${{ matrix.mobx }}
+        run: npm install --no-save --force mobx@${{ matrix.mobx }}
       - run: npm run cover
       - run: npm run coverage:check
-      - run: npm run build
       - run: npx nyc report --reporter=text-lcov > coverage.lcov
+      - run: npm run build
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
           file: ./coverage.lcov
           fail_ci_if_error: false
       - name: Semantic Release
+        if: matrix.mobx == 7
         uses: cycjimmy/semantic-release-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
