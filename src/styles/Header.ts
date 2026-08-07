@@ -3,22 +3,22 @@ import theme from './_.theme';
 
 export default {
   btn: css({
-    float: 'right',
-    margin: '2px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '6px',
-    borderRadius: '4px',
-    background: 'transparent',
-    transition: 'background 120ms ease',
+    "float": 'right',
+    "margin": '2px',
+    "display": 'flex',
+    "alignItems": 'center',
+    "justifyContent": 'center',
+    "padding": '6px',
+    "borderRadius": '4px',
+    "background": 'transparent',
+    "transition": 'background 120ms ease',
     ':hover': {
       background: theme.base01,
     },
   }),
   icon: css({
-    color: theme.base0B,
-    display: 'flex',
+    "color": theme.base0B,
+    "display": 'flex',
     ':hover': {
       color: theme.base0A,
     },
