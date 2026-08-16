@@ -31,6 +31,7 @@ module.exports = {
     },
   },
   externals: {
+    'mobx-formkit': 'mobx-formkit',
     'mobx-react-form': 'mobx-react-form',
     'mobx-react': 'mobx-react',
     'react': 'react',

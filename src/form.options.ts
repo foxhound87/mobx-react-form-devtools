@@ -1,4 +1,4 @@
-import Form from 'mobx-react-form';
+import Form from './load-form';
 import _ from 'lodash';
 
 const observer = form => ({ field }) =>

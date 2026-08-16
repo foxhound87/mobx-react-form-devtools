@@ -63,6 +63,7 @@
     "mobx": "^6.12.0 || ^7.0.0",
     "mobx-react": "*",
     "mobx-react-form": "*",
+    "mobx-formkit": "*",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*"

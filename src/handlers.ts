@@ -16,7 +16,7 @@ export default $actions => ({
 
   handleOnOpenDoc: (e) => {
     e.preventDefault();
-    const link = 'https://foxhound87.github.io/mobx-react-form/';
+    const link = 'https://foxhound87.github.io/mobx-formkit/';
     window.open(link, '_blank'); // eslint-disable-line
   },
 

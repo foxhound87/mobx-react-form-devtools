@@ -1,8 +1,8 @@
-### [Repo](https://github.com/foxhound87/mobx-react-form-devtools) &bull; [NPM](https://www.npmjs.com/package/mobx-react-form-devtools) &bull; [Documentation](https://foxhound87.github.io/mobx-react-form) &bull; [Live Demo](https://foxhound87.github.io/mobx-react-form-demo) &bull; [MobX React Form](https://github.com/foxhound87/mobx-react-form) &bull; [Join Discord Channel](https://discord.gg/CVV8w4zat4)
+### [Repo](https://github.com/foxhound87/mobx-react-form-devtools) &bull; [NPM](https://www.npmjs.com/package/mobx-react-form-devtools) &bull; [Documentation](https://foxhound87.github.io/mobx-formkit) &bull; [Live Demo](https://foxhound87.github.io/mobx-formkit-demo) &bull; [MobX React Form](https://github.com/foxhound87/mobx-formkit) &bull; [Join Discord Channel](https://discord.gg/CVV8w4zat4)
 
 # MobX React Form DevTools
 
-### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-react-form)
+### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-formkit)
 
 [![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mobx-react-form-devtools)
 [![NPM Version](https://img.shields.io/npm/v/mobx-react-form-devtools?label=npm&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/mobx-react-form-devtools)
@@ -39,7 +39,7 @@ npm install --save mobx-react-form-devtools
 
 ## Demo
 
-[Live Demo](https://foxhound87.github.io/mobx-react-form-demo) — Open the DevTools panel on any demo form.
+[Live Demo](https://foxhound87.github.io/mobx-formkit-demo) — Open the DevTools panel on any demo form.
 
 ## Usage
 
