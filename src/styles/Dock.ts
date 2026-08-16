@@ -9,10 +9,7 @@ export default {
     paddingBottom: '20px',
   }),
   dock: css({
-    "fontFamily": '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-    '@media (min-width: 0px) and (max-width: 450px)': {
-      display: 'none',
-    },
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   }),
   draggable: css({
     position: 'fixed',
