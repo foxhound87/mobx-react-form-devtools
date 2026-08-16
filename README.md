@@ -2,6 +2,18 @@
 
 # MobX React Form DevTools
 
+> ## ⚠️ This package is deprecated
+>
+> **`mobx-react-form-devtools` is no longer maintained.**
+>
+> It has been superseded by [`mobx-formkit-devtools`](https://github.com/foxhound87/mobx-formkit-devtools) — the new DevTools suite (in-app dock SDK + browser extension) for [MobX FormKit](https://github.com/foxhound87/mobx-formkit).
+>
+> ```bash
+> npm install --save mobx-formkit-devtools
+> ```
+>
+> Please migrate to the new package.
+
 ### DevTools for [MobX Formkit](https://github.com/foxhound87/mobx-formkit)
 
 [![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mobx-react-form-devtools)
