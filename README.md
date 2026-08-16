@@ -2,7 +2,7 @@
 
 # MobX React Form DevTools
 
-### DevTools for [MobX React Form](https://github.com/foxhound87/mobx-formkit)
+### DevTools for [MobX Formkit](https://github.com/foxhound87/mobx-formkit)
 
 [![NPM](https://nodei.co/npm/mobx-react-form-devtools.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mobx-react-form-devtools)
 [![NPM Version](https://img.shields.io/npm/v/mobx-react-form-devtools?label=npm&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/mobx-react-form-devtools)

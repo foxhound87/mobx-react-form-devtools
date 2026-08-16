@@ -15,7 +15,7 @@ export default observer(({ store, handlers }) => (
   <div className={cx(style.heading, (!store.open && !store.windowIsOpen) && $U.hidden)}>
     <div className={cx($U.left)}>
       <b className={cx(style.hli)}>
-        MOBX-REACT-FORM
+        MOBX FORMKIT
       </b>
       <b className={cx(style.hlb)}>
         DEVTOOLS

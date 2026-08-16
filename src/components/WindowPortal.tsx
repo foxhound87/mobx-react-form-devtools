@@ -14,7 +14,7 @@ export const WindowPortal = ({ children, closeWindowPortal }) => {
     return () => currentWindow.close();
   }, []);
 
-  externalWindow.current.document.title = "mobx-react-form-devtools";
+  externalWindow.current.document.title = "MobX Formkit DevTools";
   externalWindow.current.document.body.appendChild(containerEl);
   copyStyles(document, externalWindow.current.document);
 
